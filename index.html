@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div id="root">
+        <nav id="navbar">
+            <div>
+                <img class="plane-image" src="https://akshaysaini.in/img/plane.gif"/>
+            </div>
+            <div class="intro">
+                <h1 class="name">Murali Krishna</h1>
+                <p>I am a web devloper</p>
+            </div>
+            <div class="links">
+                <a class="navbar-link" href="#about">About</a>
+                <a class="navbar-link" href="#projects">Projects</a>
+                <a class="navbar-link" href="#contact">Contact</a>
+            </div>
+            
+        </nav>
+        <section id="about">
+            <div>
+                <img class="my-image" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758599926/WhatsApp_Image_2025-09-22_at_09.16.03_45c72d21_t2b99u.jpg"/>
+            </div>
+            <div class="profile-card">
+                <h1 class="profile-heading">About Me</h1>
+                <p class="profile-description">I’m Murali Krishna, a 21-year-old Full Stack Engineer passionate about building scalable and robust web applications with React and Node.js. I enjoy solving complex problems and finding creative, efficient solutions.</p>
+                <p>Outside of tech, I’m an avid chess player and cricket enthusiast, which help me stay focused, strategic, and team-oriented. I believe in working with sincerity, persistence, and a never-give-up attitude.</p>
+            </div>
+        </section>
+        <section id="projects">  
+            <div>
+                <h1 class="profile-heading">Skills</h1>
+                <div class="skills-logo-container">
+                        <img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"/>
+                        <img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg"/>
+                        <img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"/>
+                        <img class="skill-logo" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758601648/React_Logo_SVG_pftqlk.svg"/>
+                        <img class="skill-logo" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758601812/Node.js_logo_uxyakl.svg"/>
+                        <img class="skill-logo" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758601918/MongoDB_Fores-Green_pp3hik.svg"/>
+                        <img class="skill-logo" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758602108/Expressjs_ambrnl.png"/>
+                        <img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"/>      
+                </div>
+
+            </div>
+            <div>   
+                <h1 class="profile-heading">Projects</h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <img src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758620418/Screenshot_2025-09-23_150811_yl0gsx.png" style="width:100%">
+                        <div class="text">TechMates</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <img src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758087853/image_1_rvhd77.jpg" style="width:100%">
+                        <div class="text">HappyFoods</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758279166/certificate_1_kptaad.png" style="width:100%">
+                        <div class="text">YouTube Clone</div>
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>  
+        </section>
+
+        <section id="contact">
+            <div class="contact-header">
+                
+                <h1 class="profile-heading">Coffee With Me</h1>
+                <img class="coffee-image" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758618219/coffee_n68d5l.png"/>
+            </div>
+            <div class="send-message-container">
+                <input placeholder="john@gmail.com" class="to-user-contact" type="email"/>
+                <textarea placeholder="Type here... feel free to connnect" class="text-box"></textarea>
+                <button id="submit-btn">submit</button>
+            </div>
+            <div class="contact-links-container">
+                <img class="contact-icon" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758603461/linkden-image.svg"/>
+                <img class="contact-icon" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758603802/Gmail_icon__2020_tunb4o.svg"/>
+                <img class="contact-icon" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758603802/Instagram_logo_2022_frfd26.svg"/>
+                <img class="contact-icon" src="https://res.cloudinary.com/dtbojznp3/image/upload/v1758603961/2023_Facebook_icon_hernas.svg"/>
+            </div>
+        </section>
+    </div>
+<script src="/index.js"></script>
 </body>
 </html>
