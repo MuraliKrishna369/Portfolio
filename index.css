@@ -3,6 +3,10 @@ body{
     font-family: "Roboto", sans-serif;
    
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 #navbar{
    color: #fff;
     padding: 10px;
@@ -42,6 +46,37 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+.project-card{
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.first-project{
+  background-image: url("https://res.cloudinary.com/dtbojznp3/image/upload/v1758778669/Screenshot_2025-09-25_110635_ubzu9v.png");
+}
+.second-project{
+  background-image: url("https://res.cloudinary.com/dtbojznp3/image/upload/v1758620418/Screenshot_2025-09-23_150811_yl0gsx.png");
+}
+.third-project{
+  background-image: url("https://res.cloudinary.com/dtbojznp3/image/upload/v1758782971/Screenshot_2025-09-25_121813_ni2a9l.png");
+}
+.live-link{
+  width: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  border: none;
+  cursor: pointer;
+
+}
+
 .send-message-container{
   padding: 5px;
   display: flex;
@@ -81,10 +116,27 @@ body{
   align-self: center;
 
 }
+.name{
+  font-family: "Bungee Spice", sans-serif;
+}
+.profile-heading{
+  font-weight: 300;
+}
+.navbar-link:hover{
+  text-decoration: underline;
+  margin: 5px;
+}
 
 @media screen and (min-width: 600px) {
   
-
+.project-card{
+  height: 200px;
+  width: 300px;
+}
+.project-card-container{
+  display: flex;
+  justify-content: space-around;
+}
 #navbar{
     color: #fff;
     padding: 10px;
@@ -131,6 +183,11 @@ body{
 .profile-heading{
     font-weight: 300;
 }
+.project-image{
+  width: 50px;
+  height: 50px;
+}
+
 #about{
     margin-top: 20px;
     display: flex;
@@ -138,10 +195,6 @@ body{
     align-items: center;
 }
 
-#projects{
-    display: flex;
-    justify-content: space-around;
-}
 .send-message-container{
     display: flex;
     flex-direction: column;
